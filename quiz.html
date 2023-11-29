@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Kaun Banega Crorepati</title>
+</head>
+
+<body onload="quizLoaded()">
+  <div class="music-container" id="music-container"></div>
+  <div class=" nav-icon ">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <!-- final result container -->
+  <div id="final-result-container">
+    <div id="final-result-wrapper">
+
+      <img src="/images/cup.png" alt="" srcset="">
+      <h2 id="final-username">Congratulaion Abhay</h2>
+      <p id="final-prize">You Won 50,000</p>
+      <button id="play-again">Play Again</button>
+    </div>
+
+  </div>
+
+  <!-- quiz  container -->
+  <div class=" quiz-container ">
+
+
+    <!-- life line container -->
+    <div class=" life-line-container  ">
+      <div id="life-line-audience" class=" life-line ">
+        <div class="item item-icon  ">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <div id="life-line-fiftyfifty" class=" item item-text  ">
+          <span>50:50</span>
+        </div>
+        <div id="life-line-double-chance" class=" item item-text  ">
+          <span>2X</span>
+        </div>
+        <div id="life-line-correct answer" class="item item-icon  ">
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <button id="quit-button" onclick="displayFinalResult()" class="quit">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        Quit
+      </button>
+    </div>
+
+
+    <!-- question conatiner -->
+    <div class=" question-container ">
+      <div class="timer">
+        <h2 id="timer"></h2>
+      </div>
+
+      <div class=" question-box ">
+        <h2 id="question">
+          Question goes here
+        </h2>
+      </div>
+      <div id="option-container" class=" option-conatiner "></div>
+      <div id="result-container">
+        <h3 id="result-text"></h3>
+      </div>
+    </div>
+
+    <!-- prizes conatiner -->
+    <div id="prizes-container" class=" prizes-container "></div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Kaun Banega Crorepati</title>
+</head>
+
+<body onload="playMusic('theme')">
+  <div class="music-container" id="music-container"></div>
+  <div class=" form-container ">
+    <form class=" form " onsubmit="userForm(event)">
+      <h1>Welcome to</h1>
+      <img src="/images/kbc-logo.svg" alt="" srcset="">
+      <label for="user-name">Enter your name</label>
+      <input required id="user-name" type="text">
+      <button type="submit">Start Game</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
